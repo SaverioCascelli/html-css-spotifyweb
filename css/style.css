@@ -94,12 +94,12 @@ header .btn{
 main{      
     z-index: 1;
     padding-top: 90px;
+    overflow: auto;
 }
 
 main .container{
     margin-left: 230px;
     height: calc(100vh - 180px);
-    overflow: auto;
 }
 
 /*********** /MAIN ***********/
