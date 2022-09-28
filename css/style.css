@@ -18,7 +18,7 @@ header,footer{
 
 nav{
     height: calc(100vh - 90px);
-    z-index: 998;
+    z-index: 999;
     width: 230px;
     background-color: black;
     color: white;
@@ -61,16 +61,24 @@ nav .playlist{
     padding: 1rem;
 }
 
+.p-2{
+    padding: 2rem;
+}
+
 .p-3{
     padding: 3rem;
 }
 
 .m-1{
-    padding: 1rem;
+    margin: 1rem;
+}
+
+.m-2{
+    margin: 2rem;
 }
 
 .m-3{
-    padding: 3rem;
+    margin: 3rem;
 }
 
 
@@ -81,8 +89,9 @@ nav .playlist{
 header{
     position: fixed;
     width: 100%;    
-    z-index: 997;
+    z-index: 998;
     justify-content: space-between;
+    background-color: rgba(0, 0, 0, .30);
 }
 
 header .btn{
@@ -106,8 +115,12 @@ main .container{
 
 /*********** FOOTER ***********/
 footer{
-    display: flex;
     background-color: rgb(40, 40, 40);
+}
+
+footer .container{
+    width: 100%;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
