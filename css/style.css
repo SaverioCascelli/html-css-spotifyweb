@@ -21,9 +21,7 @@ nav{
     z-index: 999;
     width: 230px;
     background-color: black;
-    color: white;
-    display: flex;
-    flex-direction: column;
+    color: white; 
 }
 
 
@@ -149,7 +147,7 @@ main .container section:last-child{
     padding-bottom: 1rem;
 }
 
-.menu{
+main .menu{
     align-self: center;
 }
 
