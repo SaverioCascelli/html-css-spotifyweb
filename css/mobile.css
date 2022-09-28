@@ -6,6 +6,10 @@
     nav > *{
         display:none;
     }
+    
+    main .container{
+        margin-left: 50px;
+    }
 
     
 }

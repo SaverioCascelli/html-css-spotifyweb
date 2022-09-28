@@ -109,7 +109,7 @@ nav .playlist{
 .wrap{
     flex-wrap: wrap;
 }
-.box-in-6{
+.box-dt-6{
     width: calc(100% / 6 - 1rem);
     aspect-ratio: 1;    
     background-color: green;
