@@ -6,61 +6,107 @@
 
 body{
     color: white;
+    background-color:rgb(20, 25, 34); 
 }
 
 header,footer{
     height: 90px;
-    width: 100%;
-    position: fixed;
-    
+    display: flex;
 }
 
-footer{
-    z-index: 999;
-    background-color: rgb(40, 40, 40);
-    bottom: 0;
-}
+/*********** NAV ***********/
 
-header{
-    z-index: 997;
-    background-color: rgb(8, 11, 18)    ;
-    padding-left: 230px ;
-}
-
-main{
-    background-color:rgb(20, 25, 34);
-    height: 100%;
-    z-index: 1;
-    padding: 90px 0px 90px 230px;
-}
-
-header nav{
-    height: 100vh;
-    position: fixed;
-    left: 0;
+nav{
+    height: calc(100vh - 90px);
     z-index: 998;
     width: 230px;
     background-color: black;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
+
+
+nav div:first-child{
+    height: 90px;
+    
+}
+
+nav div:nth-child(2){
+    height: 120px;
+    
+}
+
+nav .playlist{
+    color: red;
+    overflow: auto;
+    height: calc(100% - 210px);
+}
+
+/*********** /NAV ***********/
+
 
 /*********** TOOLS ***********/
 
 .debug{
     background-color: rgba(255, 0, 0, .25);
+    border: 1px solid green;
 }
 
 /*********** /TOOLS ***********/
 
+/*********** UTILITIES ***********/
+
+.p-1{
+    padding: 1rem;
+}
+
+.p-3{
+    padding: 3rem;
+}
+
+.m-1{
+    padding: 1rem;
+}
+
+.m-3{
+    padding: 3rem;
+}
+
+
+/*********** /UTILITIES***********/
+
 
 /*********** HEADER ***********/
+header{
+    position: fixed;
+    width: 100%;    
+    z-index: 997;
+    justify-content: space-between;
+}
 
+header .btn{
+    align-self: center;
+}
 /*********** /HEADER ***********/
 
 /*********** MAIN ***********/
+main{      
+    z-index: 1;
+    padding-top: 90px;
+}
+
+main .container{
+    margin-left: 230px;
+    height: calc(100vh - 180px);
+    overflow: auto;
+}
 
 /*********** /MAIN ***********/
 
 /*********** FOOTER ***********/
+footer{
+    background-color: rgb(40, 40, 40);
+}
 
 /*********** /FOOTER ***********/
