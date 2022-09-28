@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    color: white;
+}
+
 header,footer{
     height: 90px;
     width: 100%;
@@ -13,19 +17,19 @@ header,footer{
 
 footer{
     z-index: 999;
-    background-color: red;
+    background-color: rgb(40, 40, 40);
     bottom: 0;
 }
 
 header{
     z-index: 997;
-    background-color: aqua;
+    background-color: rgb(8, 11, 18)    ;
     padding-left: 230px ;
 }
 
 main{
-    background-color:rgb(30, 30, 30);
-    height: 100vh;
+    background-color:rgb(20, 25, 34);
+    height: 100%;
     z-index: 1;
     padding: 90px 0px 90px 230px;
 }
