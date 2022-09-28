@@ -81,6 +81,27 @@ nav .playlist{
     margin: 3rem;
 }
 
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center-xy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-col-center-xy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /*********** /UTILITIES***********/
 
