@@ -180,6 +180,26 @@ a:hover{
 .box-max{
     width: 100%;
     aspect-ratio: 1;
+    position: relative;
+}
+
+.box-max:hover{
+    filter:sepia(.5);
+    cursor: pointer;
+}
+
+.box-max:hover > i{
+    display: inline;
+}
+
+.box-max > i{
+    color: white;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    display: none;
 }
 
 .box-max > img{
