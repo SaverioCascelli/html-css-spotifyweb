@@ -4,40 +4,69 @@
     box-sizing: border-box;
 }
 
+img{
+    width: 100%;
+}
+
 body{
-    color: white;
+    color: #7d7f84;
     background-color:rgb(20, 25, 34); 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
 header,footer{
     height: 90px;
     display: flex;
-}
+}   
 
 /*********** NAV ***********/
 
 nav{
     height: calc(100vh - 90px);
-    z-index: 999;
+    z-index: 998;
     width: 230px;
     background-color: black;
-    color: white; 
 }
 
-
-nav div:first-child{
-    height: calc(90px - 1rem);
+nav a{
+    padding-left: 1rem;
+    width: 100%;
+    color:#7d7f84;
 }
 
-nav div:nth-child(2){
-    height: 120px;
-    
+nav a.active{
+    border-left: 3px solid #adff2f;
+    color: white;
+}
+
+nav .top{
+    flex-shrink: 3;
+    height: calc(100% - 51px);
+}
+
+nav .logo{
+   width: 70%;
+}
+
+nav .menu{
+    margin-top: 10px;
+    height: 110px;
+}
+
+nav .menu li{
+    width: 100%;
+    height: 35px;
+}
+
+nav .menu img{
+    width: 20px;
+    margin-right: .5rem;
 }
 
 nav .playlist{
-    color: red;
     overflow: auto;
-    height: calc(100% - 210px);
+    height: 100%;
 }
 
 /*********** /NAV ***********/
@@ -56,6 +85,22 @@ nav .playlist{
 
 .p-1{
     padding: 1rem;
+}
+
+.p-b-1{
+    padding-bottom: 1rem;
+}
+
+.p-l-1{
+    padding-left: 1rem;
+}
+
+.p-t-1{
+    padding-top: 1rem;
+}
+
+.p-r-1{
+    padding-right: 1rem;
 }
 
 .p-2{
@@ -78,8 +123,20 @@ nav .playlist{
     margin: 3rem;
 }
 
+.small-font{
+    font-size: .8rem;
+}
+
+.col-white{
+    color: white;
+}
+
 .list-no-style{
     list-style: none;
+}
+
+.a-no-style{
+    text-decoration: none;
 }
 
 .flex{
@@ -93,6 +150,14 @@ nav .playlist{
 
 .center-xy{
     justify-content: center;
+    align-items: center;
+}
+
+.center-x{
+    justify-content: center;
+}
+
+.center-y{
     align-items: center;
 }
 
@@ -112,6 +177,10 @@ nav .playlist{
     aspect-ratio: 1;    
     background-color: green;
     max-width: 250px;
+}
+
+.dt-hide{
+    display: none;
 }
 
 /*********** /UTILITIES***********/
@@ -156,6 +225,7 @@ main .menu{
 /*********** FOOTER ***********/
 footer{
     background-color: rgb(40, 40, 40);
+    z-index: 999;
 }
 
 footer .container{

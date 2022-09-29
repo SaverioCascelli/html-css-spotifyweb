@@ -3,8 +3,29 @@
         max-width: 50px;
     }
 
-    nav > * , nav >*>*{
+    /* nav > * , nav >*>*{
         display:none;
+    } */
+
+    .mb-hide{
+        display: none;
+    }
+
+    .mb-show{
+        display: inline-block;
+    }
+
+    nav .logo{
+        width: 20px;
+     }
+
+    nav .top > *{
+        margin: 0;
+        padding: 0;
+    }
+
+    nav .logo{
+        margin-left: 1rem;
     }
     
     main .container{
