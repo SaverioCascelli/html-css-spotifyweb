@@ -191,6 +191,10 @@ aside .bottom span{
     margin: 3rem;
 }
 
+.inside-m-l-1 > *{
+    margin-left: 1rem;
+}
+
 .small-font{
     font-size: .8rem;
 }
@@ -235,6 +239,10 @@ aside .bottom span{
 
 .between{
     justify-content: space-between;
+}
+
+.wrap{
+    flex-wrap: wrap;
 }
 
 .gap-1{
