@@ -27,110 +27,13 @@ h3{
 
 }
 
-/*********** ASIDE ***********/
-
-aside{
-    height: calc(100vh - 90px);
-    z-index: 998;
-    width: 230px;
-    background-color: black;
+a{
+    color: #7d7f84;
 }
 
-aside a{
-    width: 100%;
-    color:#7d7f84;
-}
-
-aside .menu a{
-    padding-left: 1rem;
-}
-
-aside a.active{
-    border-left: 3px solid #adff2f;
+a:hover{
     color: white;
 }
-
-aside .top{
-    flex-shrink: 3;
-    height: calc(100% - 51px);
-    overflow: hidden;
-}
-
-aside .logo{
-   width: 70%;
-}
-
-aside .menu{
-    margin-top: 10px;
-    height: 110px;
-}
-
-aside .menu li{
-    width: 100%;
-    height: 35px;
-}
-
-aside .menu img{
-    width: 20px;
-    margin-right: .5rem;
-}
-
-aside .playlist{
-    height: calc(100% - 130px);
-}
-
-.user-playlist{
-    overflow: auto;
-    height: 100%;
-}
-
-aside .playlist > *{
-    margin-bottom: 1rem;
-}
-
-.user-playlist > *{
-    padding-bottom: 1rem;
-}
-
-
-aside .bottom{
-    margin-bottom: 5px;
-}
-
-aside .bottom a{
-    width: calc(100% - 2rem);
-}
-
-aside .bottom a:first-child{
-    border-bottom: 1px solid grey;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-}
-
-aside .bottom img{
-    width: 15px;
-}
-
-#user{
-    background-color: #808080;
-    border-radius: 50%;
-    width: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-aside .bottom span{
-    margin-left: 10px;
-}
-
-#user img{
-    width: 85%;
-}
-
-/*********** /ASIDE ***********/
-
 
 /*********** TOOLS ***********/
 
@@ -321,6 +224,111 @@ header .btn{
 }
 /*********** /HEADER ***********/
 
+/*********** ASIDE ***********/
+
+aside{
+    height: calc(100vh - 90px);
+    z-index: 998;
+    width: 230px;
+    background-color: black;
+}
+
+aside a{
+    width: 100%;
+    color:#7d7f84;
+}
+
+aside .menu a{
+    padding-left: 1rem;
+}
+
+aside a.active{
+    border-left: 3px solid #adff2f;
+    color: white;
+}
+
+aside .top{
+    flex-shrink: 3;
+    height: calc(100% - 51px);
+    overflow: hidden;
+}
+
+aside .logo{
+   width: 70%;
+}
+
+aside .menu{
+    margin-top: 10px;
+    height: 110px;
+}
+
+aside .menu li{
+    width: 100%;
+    height: 35px;
+}
+
+aside .menu img{
+    width: 20px;
+    margin-right: .5rem;
+}
+
+aside .playlist{
+    height: calc(100% - 130px);
+}
+
+.user-playlist{
+    overflow: auto;
+    height: 100%;
+}
+
+aside .playlist > *{
+    margin-bottom: 1rem;
+}
+
+.user-playlist > *{
+    padding-bottom: 1rem;
+}
+
+
+aside .bottom{
+    margin-bottom: 5px;
+}
+
+aside .bottom a{
+    width: calc(100% - 2rem);
+}
+
+aside .bottom a:first-child{
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+aside .bottom img{
+    width: 15px;
+}
+
+#user{
+    background-color: #808080;
+    border-radius: 50%;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+aside .bottom span{
+    margin-left: 10px;
+}
+
+#user img{
+    width: 85%;
+}
+
+/*********** /ASIDE ***********/
+
+
 /*********** MAIN ***********/
 main{      
     z-index: 1;
@@ -336,6 +344,19 @@ main .container{
 main .menu{
     align-self: center;
 }
+
+main .menu li:after{
+    border-bottom: 2px solid rgba(173, 255, 47,0);
+    content: '';
+    display: block;
+    margin-left: 35%;
+    width: 30%;
+}
+
+main .menu li:hover:after{
+    border-bottom: 2px solid rgba(173, 255, 47,1);
+}
+
 
 main .container section:last-child{
     padding-bottom: 1rem;
