@@ -30,9 +30,12 @@ nav{
 }
 
 nav a{
-    padding-left: 1rem;
     width: 100%;
     color:#7d7f84;
+}
+
+nav .menu a{
+    padding-left: 1rem;
 }
 
 nav a.active{
@@ -43,6 +46,7 @@ nav a.active{
 nav .top{
     flex-shrink: 3;
     height: calc(100% - 51px);
+    overflow: hidden;
 }
 
 nav .logo{
@@ -65,9 +69,15 @@ nav .menu img{
 }
 
 nav .playlist{
+    height: 100%;
+    overflow: auto;
+}
+
+ .user-playlist{
     overflow: auto;
     height: 100%;
-}
+    flex-shrink: 3;
+ }
 
 /*********** /NAV ***********/
 
