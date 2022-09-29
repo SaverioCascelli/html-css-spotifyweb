@@ -1,5 +1,5 @@
 @media screen and (max-width: 1000px) {
-    .box-lt-4{
+    .col-lt-4{
         width: calc(100% / 4 - 1rem);
     }
 }

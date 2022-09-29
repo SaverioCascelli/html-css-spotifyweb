@@ -191,6 +191,22 @@ aside .bottom span{
     margin: 3rem;
 }
 
+.m-b-half{
+    margin-bottom: .5rem;
+}
+
+.m-b-1{
+    margin-bottom: 1rem;
+}
+
+.m-b-2{
+    margin-bottom: 2rem;
+}
+
+.m-b-3{
+    margin-bottom: 3rem;
+}
+
 .inside-m-l-1 > *{
     margin-left: 1rem;
 }
@@ -252,15 +268,40 @@ aside .bottom span{
 .wrap{
     flex-wrap: wrap;
 }
-.box-dt-6{
+
+.col-dt-6{
     width: calc(100% / 6 - 1rem);
-    aspect-ratio: 1;    
-    background-color: green;
     max-width: 250px;
+}
+
+.box-max{
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.box-max > img{
+    object-fit: cover;
+}
+
+.col-in-6{
+    width: calc(100% / 6 - 1rem);
 }
 
 .dt-hide{
     display: none;
+}
+
+.max-width{
+    width: 100%;
+}
+
+.circle{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.text-center{
+    text-align: center;
 }
 
 /*********** /UTILITIES***********/
@@ -292,13 +333,15 @@ main .container{
     height: calc(100vh - 180px);
 }
 
+main .menu{
+    align-self: center;
+}
+
 main .container section:last-child{
     padding-bottom: 1rem;
 }
 
-main .menu{
-    align-self: center;
-}
+
 
 /*********** /MAIN ***********/
 
