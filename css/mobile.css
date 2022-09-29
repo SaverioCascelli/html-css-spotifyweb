@@ -1,5 +1,5 @@
 @media screen and (max-width: 600px) {
-    nav{
+    aside{
         max-width: 50px;
     }
 
@@ -15,17 +15,22 @@
         display: inline-block;
     }
 
-    nav .logo{
+    aside .logo{
         width: 20px;
      }
 
-    nav .top > *{
+     aside .top > *{
         margin: 0;
         padding: 0;
     }
 
-    nav .logo{
+    aside .logo{
         margin-left: 1rem;
+        margin-top: 5px;
+    }
+
+    aside a.active{
+        border: 0px;
     }
     
     main .container{
