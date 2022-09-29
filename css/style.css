@@ -114,6 +114,10 @@ a:hover{
     margin-left: 1rem;
 }
 
+.inside-m-r-1 > *{
+    margin-right: 1rem;
+}
+
 .small-font{
     font-size: .8rem;
 }
@@ -183,25 +187,6 @@ a:hover{
     position: relative;
 }
 
-.box-max:hover{
-    filter:sepia(.5);
-    cursor: pointer;
-}
-
-.box-max:hover > i{
-    display: inline;
-}
-
-.box-max > i{
-    color: white;
-    position: absolute;
-    left:50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 60px;
-    display: none;
-}
-
 .box-max > img{
     object-fit: cover;
 }
@@ -225,6 +210,21 @@ a:hover{
 
 .text-center{
     text-align: center;
+    
+}
+
+.bar{
+    height: 4px;
+    background-color: #5a5a5a;
+    border-radius: 4px 4px;
+    
+}
+
+.pointer{
+    width: 10px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: white;
 }
 
 /*********** /UTILITIES***********/
@@ -382,6 +382,24 @@ main .container section:last-child{
     padding-bottom: 1rem;
 }
 
+.box-max:hover{
+    filter:sepia(.5);
+    cursor: pointer;
+}
+
+.box-max:hover > i{
+    display: inline;
+}
+
+.box-max > i{
+    color: white;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    display: none;
+}
 
 
 /*********** /MAIN ***********/
@@ -390,6 +408,43 @@ main .container section:last-child{
 footer{
     background-color: rgb(40, 40, 40);
     z-index: 999;
+}
+
+.album-img{
+    width: 45px;
+    aspect-ratio: 1;
+}
+
+.album-img img{
+    object-fit: cover;
+}
+
+.volume{
+    width: 120px;
+    position: relative;
+}
+
+.volume .percentage{
+    width: 20%;
+    background-color: white;
+    position: absolute;
+    left: 0%;
+}
+
+.volume:hover .percentage{
+    background-color: #adff2f;
+    
+}
+
+.pointer{
+    position: absolute;
+    left: 100%;
+    transform: translate(-50%, -25%);
+    display: none;
+}
+
+.volume:hover .pointer{
+   display: inline-block;
 }
 
 footer .container{
