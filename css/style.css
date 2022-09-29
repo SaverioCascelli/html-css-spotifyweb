@@ -27,7 +27,7 @@ h3{
 
 }
 
-/*********** NAV ***********/
+/*********** ASIDE ***********/
 
 aside{
     height: calc(100vh - 90px);
@@ -97,12 +97,13 @@ aside .bottom{
     margin-bottom: 5px;
 }
 
+aside .bottom a{
+    width: calc(100% - 2rem);
+}
 
 aside .bottom a:first-child{
-    display: inline-block;
     border-bottom: 1px solid grey;
     padding-bottom: 10px;
-    width: calc(100% - 2rem);
     margin-bottom: 10px;
 }
 
@@ -114,7 +115,6 @@ aside .bottom img{
     background-color: #808080;
     border-radius: 50%;
     width: 25px;
-    height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,7 +129,7 @@ aside .bottom span{
     width: 85%;
 }
 
-/*********** /NAV ***********/
+/*********** /ASIDE ***********/
 
 
 /*********** TOOLS ***********/
