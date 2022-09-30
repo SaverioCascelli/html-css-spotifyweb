@@ -252,6 +252,7 @@ header .btn{
 }
 
 header .btn{
+    display: inline-block;
     font-size: .8rem;
     border: 1px solid white;
     border-radius:  20px;

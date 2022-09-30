@@ -3,10 +3,6 @@
         max-width: 50px;
     }
 
-    /* nav > * , nav >*>*{
-        display:none;
-    } */
-
     .mb-hide{
         display: none;
     }
@@ -14,6 +10,11 @@
     .mb-show{
         display: flex;
     }
+
+    aside .bottom a:first-child {
+        border-bottom: 0px ;
+    }
+    
 
     aside .logo{
         width: 20px;
