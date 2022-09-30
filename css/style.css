@@ -118,6 +118,14 @@ a:hover{
     margin-right: 1rem;
 }
 
+.inside-p-l-1 > *{
+    padding-left: 1rem;
+}
+
+.inside-p-r-1 > *{
+    padding-right: 1rem;
+}
+
 .small-font{
     font-size: .8rem;
 }
@@ -410,30 +418,62 @@ footer{
     z-index: 999;
 }
 
-.album-img{
+footer .container{
+    width: 100%;
+}
+
+.left-footer > *{
+    flex-shrink: 0;
+}
+
+.left-footer .album-img{
     width: 45px;
     aspect-ratio: 1;
 }
 
-.album-img img{
+.left-footer .album-img img{
     object-fit: cover;
 }
 
-.volume{
-    width: 120px;
+.center-footer{
+    color: white;
+    width: 500px;
+    flex-shrink: 2;
+}
+
+.right-footer{
+    width: 240px;
+    flex-shrink: 1;
+}
+
+.bar{
+    width: 100%;
+}
+
+.bar.progression{
     position: relative;
 }
 
-.volume .percentage{
-    width: 20%;
+.bar.volume{
+    position: relative;
+}
+
+.percentage{
     background-color: white;
     position: absolute;
     left: 0%;
 }
 
-.volume:hover .percentage{
+.progression .percentage{
+    width: 30%;
+}
+
+.volume .percentage{
+    width: 20%;  
+}
+
+.volume:hover .percentage ,.progression:hover .percentage{
     background-color: #adff2f;
-    
 }
 
 .pointer{
@@ -443,12 +483,12 @@ footer{
     display: none;
 }
 
-.volume:hover .pointer{
+.volume:hover .pointer , .progression:hover .pointer{
    display: inline-block;
 }
 
-footer .container{
-    width: 100%;
+.fa-circle-play{
+    font-size: 1.8rem;
 }
 
 /*********** /FOOTER ***********/

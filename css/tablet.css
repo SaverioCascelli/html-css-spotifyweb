@@ -2,4 +2,8 @@
     .col-tb-2{
         width: calc(100% / 2 - 1rem);
     }
+
+    .col-in-tb{
+        flex-direction: column;
+    }
 }
