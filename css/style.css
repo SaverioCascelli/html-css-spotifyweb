@@ -250,6 +250,17 @@ header{
 header .btn{
     align-self: center;
 }
+
+header .btn{
+    font-size: .8rem;
+    border: 1px solid white;
+    border-radius:  20px;
+    padding: 10px 35px 10px 35px;
+}
+
+header .btn:hover{
+    transform: scale(1.1);
+}
 /*********** /HEADER ***********/
 
 /*********** ASIDE ***********/
@@ -381,7 +392,7 @@ main .menu li:after{
     width: 30%;
 }
 
-main .menu li:hover:after{
+main .menu li.active:after{
     border-bottom: 2px solid rgba(173, 255, 47,1);
 }
 
