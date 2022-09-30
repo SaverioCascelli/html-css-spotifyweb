@@ -270,6 +270,7 @@ aside{
     z-index: 998;
     width: 230px;
     background-color: black;
+    overflow: hidden;
 }
 
 aside a{
@@ -287,9 +288,9 @@ aside a.active{
 }
 
 aside .top{
-    flex-shrink: 3;
-    height: calc(100% - 51px);
+    height: calc(100% - 60px);
     overflow: hidden;
+    min-height: 200px;
 }
 
 aside .logo{
@@ -312,7 +313,7 @@ aside .menu img{
 }
 
 aside .playlist{
-    height: calc(100% - 130px);
+    height: calc(100% - 145px);
 }
 
 .user-playlist{
