@@ -508,7 +508,7 @@ footer .container{
     font-size: 1.8rem;
 }
 
-.fa-circle-play:hover{
+footer .fa-circle-play:hover{
     transform: scale(1.2);
 }
 
