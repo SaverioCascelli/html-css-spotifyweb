@@ -454,6 +454,10 @@ footer .container{
     flex-shrink: 2;
 }
 
+.center-footer a,.right-footer a{
+    color: white;
+}
+
 .right-footer{
     width: 240px;
     flex-shrink: 1;
@@ -502,6 +506,10 @@ footer .container{
 
 .fa-circle-play{
     font-size: 1.8rem;
+}
+
+.fa-circle-play:hover{
+    transform: scale(1.2);
 }
 
 /*********** /FOOTER ***********/
